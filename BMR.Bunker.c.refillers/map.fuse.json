@@ -1,0 +1,679 @@
+{
+  "$schema": "../FUSE/schemas/fuse-mod.schema.json",
+  "schemaVersion": "1.0",
+  "id": "BMR.Bunker.c.refillers",
+  "name": "BMR.Bunker.c.refillers",
+  "author": "BMR | Bjørn",
+  "modVersion": "0.1.0",
+  "coordinateSpace": "world",
+  "tracks": {
+    "nodes": {
+      "Nzs8": {
+        "position": {
+          "x": 12628.6123,
+          "y": 561.25,
+          "z": 4771.997
+        },
+        "rotation": {
+          "x": 0.0,
+          "y": 306.0,
+          "z": 0.0
+        },
+        "flipSwitchStand": false
+      },
+      "Nf27": {
+        "position": {
+          "x": 4078.446,
+          "y": 644.0,
+          "z": -3055.34375
+        },
+        "rotation": {
+          "x": 0.0,
+          "y": 311.807983,
+          "z": 0.0
+        },
+        "flipSwitchStand": false
+      }
+    },
+    "segments": {},
+    "spans": {
+      "BMR.Bunker.c.refillers:span:bryson-delivery": {
+        "upper": {
+          "segmentId": "Sk0n",
+          "distance": 35.7228,
+          "end": "End"
+        },
+        "lower": {
+          "segmentId": "S83r",
+          "distance": 11.8585281,
+          "end": "End"
+        }
+      },
+      "BMR.Bunker.c.refillers:span:dillsboro-delivery": {
+        "upper": {
+          "segmentId": "Sca0",
+          "distance": 51.9801674,
+          "end": "Start"
+        },
+        "lower": {
+          "segmentId": "S02w",
+          "distance": 0.17033577,
+          "end": "End"
+        }
+      },
+      "BMR.Bunker.c.refillers:span:east-whittier-delivery": {
+        "lower": {
+          "segmentId": "S1lo",
+          "distance": 15.0,
+          "end": "A"
+        },
+        "upper": {
+          "segmentId": "S1lo",
+          "distance": 0.0,
+          "end": "B"
+        },
+        "normalize": true
+      },
+      "BMR.Bunker.c.refillers:span:alarka-delivery": {
+        "lower": {
+          "segmentId": "Spm2",
+          "distance": 0.0,
+          "end": "A"
+        },
+        "upper": {
+          "segmentId": "Spm2",
+          "distance": 0.0,
+          "end": "B"
+        },
+        "normalize": true
+      },
+      "BMR.Bunker.c.refillers:span:nantahala-delivery": {
+        "lower": {
+          "segmentId": "Scij",
+          "distance": 0.0,
+          "end": "A"
+        },
+        "upper": {
+          "segmentId": "Scij",
+          "normalized": 1.0,
+          "end": "B",
+          "offset": -15.0
+        },
+        "normalize": true
+      },
+      "BMR.Bunker.c.refillers:span:andrews-delivery": {
+        "lower": {
+          "segmentId": "Svmb",
+          "distance": 0.0,
+          "end": "A"
+        },
+        "upper": {
+          "segmentId": "Svmb",
+          "distance": 0.0,
+          "end": "B"
+        },
+        "normalize": true
+      }
+    },
+    "removals": {
+      "nodes": [],
+      "segments": [],
+      "spans": []
+    }
+  },
+  "operations": {
+    "loads": {},
+    "industries": {
+      "bryson-roundhouse-ops": {
+        "name": "Bryson Engine Service",
+        "areaId": "bryson",
+        "position": {
+          "x": -271.6577,
+          "y": 0.0,
+          "z": -22.8286133
+        },
+        "usesContract": false,
+        "mergeComponents": true,
+        "replaceComponents": false,
+        "components": {
+          "bunker-c": {
+            "type": "unloader",
+            "name": "Bryson Engine Service Bunker-C Loader",
+            "trackSpanIds": [
+              "BMR.Bunker.c.refillers:span:bryson-delivery"
+            ],
+            "carTypeFilter": "TM",
+            "loadId": "bunker-c",
+            "sharedStorage": true,
+            "storageChangeRate": 0.0,
+            "maxStorage": 10000.0,
+            "carTransferRate": 32000.0,
+            "orderAroundEmpties": false,
+            "orderAroundLoaded": false
+          }
+        }
+      },
+      "dillsboro-roundhouse-ops": {
+        "name": "Dillsboro Engine Service",
+        "areaId": "dillsboro",
+        "position": {
+          "x": -344.050781,
+          "y": -5.39306641,
+          "z": -122.803955
+        },
+        "usesContract": false,
+        "mergeComponents": true,
+        "replaceComponents": false,
+        "components": {
+          "bunker-c": {
+            "type": "unloader",
+            "name": "Dillsboro Engine Service Bunker-C Loader",
+            "trackSpanIds": [
+              "BMR.Bunker.c.refillers:span:dillsboro-delivery"
+            ],
+            "carTypeFilter": "TM",
+            "loadId": "bunker-c",
+            "sharedStorage": true,
+            "storageChangeRate": 0.0,
+            "maxStorage": 10000.0,
+            "carTransferRate": 32000.0,
+            "orderAroundEmpties": false,
+            "orderAroundLoaded": false
+          }
+        }
+      },
+      "wh-e-engine": {
+        "name": "East Whittier Engine Service",
+        "areaId": "whittier",
+        "position": {
+          "x": 372.414063,
+          "y": 0.675109863,
+          "z": -1022.07861
+        },
+        "usesContract": false,
+        "mergeComponents": true,
+        "replaceComponents": false,
+        "components": {
+          "bunker-c": {
+            "type": "unloader",
+            "name": "East Whittier Engine Service Bunker-C Loader",
+            "trackSpanIds": [
+              "BMR.Bunker.c.refillers:span:east-whittier-delivery"
+            ],
+            "carTypeFilter": "TM",
+            "loadId": "bunker-c",
+            "sharedStorage": true,
+            "storageChangeRate": 0.0,
+            "maxStorage": 10000.0,
+            "carTransferRate": 32000.0,
+            "orderAroundEmpties": false,
+            "orderAroundLoaded": false
+          }
+        }
+      },
+      "al-engine": {
+        "name": "Alarka Engine Service",
+        "areaId": "alarka",
+        "position": {
+          "x": -70.7131348,
+          "y": -1.472168,
+          "z": 95.20264
+        },
+        "usesContract": false,
+        "mergeComponents": true,
+        "replaceComponents": false,
+        "components": {
+          "bunker-c": {
+            "type": "unloader",
+            "name": "Alarka Engine Service Bunker-C Loader",
+            "trackSpanIds": [
+              "BMR.Bunker.c.refillers:span:alarka-delivery"
+            ],
+            "carTypeFilter": "TM",
+            "loadId": "bunker-c",
+            "sharedStorage": true,
+            "storageChangeRate": 0.0,
+            "maxStorage": 10000.0,
+            "carTransferRate": 32000.0,
+            "orderAroundEmpties": false,
+            "orderAroundLoaded": false
+          }
+        }
+      },
+      "nantahala-engine": {
+        "name": "Nantahala Engine Service",
+        "areaId": "nantahala",
+        "position": {
+          "x": 242.352539,
+          "y": 3.2008667,
+          "z": 194.729492
+        },
+        "usesContract": false,
+        "mergeComponents": true,
+        "replaceComponents": false,
+        "components": {
+          "bunker-c": {
+            "type": "unloader",
+            "name": "Nantahala Engine Service Bunker-C Loader",
+            "trackSpanIds": [
+              "BMR.Bunker.c.refillers:span:nantahala-delivery"
+            ],
+            "carTypeFilter": "TM",
+            "loadId": "bunker-c",
+            "sharedStorage": true,
+            "storageChangeRate": 0.0,
+            "maxStorage": 10000.0,
+            "carTransferRate": 32000.0,
+            "orderAroundEmpties": false,
+            "orderAroundLoaded": false
+          }
+        }
+      },
+      "andrews-service": {
+        "name": "Andrews Engine Service",
+        "areaId": "andrews",
+        "position": {
+          "x": -578.2285,
+          "y": -5.840637,
+          "z": -284.451172
+        },
+        "usesContract": false,
+        "mergeComponents": true,
+        "replaceComponents": false,
+        "components": {
+          "bunker-c": {
+            "type": "unloader",
+            "name": "Andrews Engine Service Bunker-C Loader",
+            "trackSpanIds": [
+              "BMR.Bunker.c.refillers:span:andrews-delivery"
+            ],
+            "carTypeFilter": "TM",
+            "loadId": "bunker-c",
+            "sharedStorage": true,
+            "storageChangeRate": 0.0,
+            "maxStorage": 10000.0,
+            "carTransferRate": 32000.0,
+            "orderAroundEmpties": false,
+            "orderAroundLoaded": false
+          }
+        }
+      }
+    }
+  },
+  "world": {
+    "scenery": {
+      "loader:Bryson-bunker-c": {
+        "position": {
+          "x": 4182.35059,
+          "y": 529.2001,
+          "z": 5317.72656
+        },
+        "rotation": {
+          "x": 0.0,
+          "y": 69.68469,
+          "z": 0.0
+        },
+        "scale": {
+          "x": 1.0,
+          "y": 1.0,
+          "z": 1.0
+        },
+        "assetIdentifier": "scenery://ALW_Loader_TankLoader"
+      },
+      "loader:Dillsboro-bunker-c": {
+        "position": {
+          "x": 21604.2285,
+          "y": 601.5,
+          "z": -1738.99927
+        },
+        "rotation": {
+          "x": 0.0,
+          "y": 75.12422,
+          "z": 0.0
+        },
+        "scale": {
+          "x": 1.0,
+          "y": 1.0,
+          "z": 1.0
+        },
+        "assetIdentifier": "scenery://ALW_Loader_TankLoader"
+      },
+      "loader:EastWhittier-bunker-c": {
+        "position": {
+          "x": 12631.6953,
+          "y": 561.3502,
+          "z": 4748.89941
+        },
+        "rotation": {
+          "x": 0.0,
+          "y": 125.982048,
+          "z": 0.0
+        },
+        "scale": {
+          "x": 1.0,
+          "y": 1.0,
+          "z": 1.0
+        },
+        "assetIdentifier": "scenery://ALW_Loader_TankLoader"
+      },
+      "loader:Alarka-bunker-c": {
+        "position": {
+          "x": 4092.973,
+          "y": 644.0,
+          "z": -3054.16577
+        },
+        "rotation": {
+          "x": 0.0,
+          "y": 311.963562,
+          "z": 0.0
+        },
+        "scale": {
+          "x": 1.0,
+          "y": 1.0,
+          "z": 1.0
+        },
+        "assetIdentifier": "scenery://ALW_Loader_TankLoader"
+      },
+      "loader:Nantahala-bunker-c": {
+        "position": {
+          "x": -15919.59,
+          "y": 597.9434,
+          "z": -10894.8154
+        },
+        "rotation": {
+          "x": 0.0,
+          "y": 53.74614,
+          "z": 0.0
+        },
+        "scale": {
+          "x": 1.0,
+          "y": 1.0,
+          "z": 1.0
+        },
+        "assetIdentifier": "scenery://ALW_Loader_TankLoader"
+      },
+      "loader:Andrews-bunker-c": {
+        "position": {
+          "x": -30183.0547,
+          "y": 538.4,
+          "z": -20185.9785
+        },
+        "rotation": {
+          "x": 0.0,
+          "y": 62.3539925,
+          "z": 0.0
+        },
+        "scale": {
+          "x": 1.0,
+          "y": 1.0,
+          "z": 1.0
+        },
+        "assetIdentifier": "scenery://ALW_Loader_TankLoader"
+      },
+      "nantahala_loader_plate1": {
+        "assetIdentifier": "scenery://CLB_Block02",
+        "position": {
+          "x": -15922.4482,
+          "y": 596.885,
+          "z": -10890.7129
+        },
+        "rotation": {
+          "x": 0.0,
+          "y": 233.430359,
+          "z": 0.0
+        },
+        "scale": {
+          "x": 0.6999999,
+          "y": 0.6999999,
+          "z": 0.6999999
+        }
+      },
+      "nantahala_loader_plate2": {
+        "assetIdentifier": "scenery://CLB_Block02",
+        "position": {
+          "x": -15922.4482,
+          "y": 597.5851,
+          "z": -10890.7119
+        },
+        "rotation": {
+          "x": 0.0,
+          "y": 233.430359,
+          "z": 0.0
+        },
+        "scale": {
+          "x": 0.6999999,
+          "y": 0.6999999,
+          "z": 0.6999999
+        }
+      },
+      "Dillsboro_loader_plate1": {
+        "assetIdentifier": "scenery://CLB_Block02",
+        "position": {
+          "x": 21602.9922,
+          "y": 601.171,
+          "z": -1734.231
+        },
+        "rotation": {
+          "x": 0.0,
+          "y": 255.346954,
+          "z": 0.0
+        },
+        "scale": {
+          "x": 0.5,
+          "y": 0.65,
+          "z": 0.7
+        }
+      },
+      "Dillsboro_loader_plate2": {
+        "assetIdentifier": "scenery://CLB_Block02",
+        "position": {
+          "x": 21602.9941,
+          "y": 600.571167,
+          "z": -1734.24084
+        },
+        "rotation": {
+          "x": 0.0,
+          "y": 255.346954,
+          "z": 0.0
+        },
+        "scale": {
+          "x": 0.5,
+          "y": 0.65,
+          "z": 0.7
+        }
+      },
+      "andrews_loader_plate1": {
+        "assetIdentifier": "scenery://CLB_Block02",
+        "position": {
+          "x": -30185.3047,
+          "y": 538.076843,
+          "z": -20181.6387
+        },
+        "rotation": {
+          "x": 0.0,
+          "y": 242.114059,
+          "z": 0.0
+        },
+        "scale": {
+          "x": 0.5,
+          "y": 0.65,
+          "z": 0.7
+        }
+      },
+      "andrews_loader_plate2": {
+        "assetIdentifier": "scenery://CLB_Block02",
+        "position": {
+          "x": -30185.3066,
+          "y": 537.477,
+          "z": -20181.64
+        },
+        "rotation": {
+          "x": 0.0,
+          "y": 242.114059,
+          "z": 0.0
+        },
+        "scale": {
+          "x": 0.5,
+          "y": 0.65,
+          "z": 0.7
+        }
+      },
+      "east_whittier_loader_plate1": {
+        "assetIdentifier": "scenery://CLB_Block02",
+        "position": {
+          "x": 12634.582,
+          "y": 561.0241,
+          "z": 4752.864
+        },
+        "rotation": {
+          "x": 0.0,
+          "y": 125.163,
+          "z": 0.0
+        },
+        "scale": {
+          "x": 0.5,
+          "y": 0.65,
+          "z": 0.7
+        }
+      },
+      "east_whittier_loader_plate2": {
+        "assetIdentifier": "scenery://CLB_Block02",
+        "position": {
+          "x": 12634.583,
+          "y": 560.5241,
+          "z": 4752.86328
+        },
+        "rotation": {
+          "x": 0.0,
+          "y": 125.163,
+          "z": 0.0
+        },
+        "scale": {
+          "x": 0.5,
+          "y": 0.65,
+          "z": 0.7
+        }
+      },
+      "alarka_loader_plate1": {
+        "assetIdentifier": "scenery://CLB_Block02",
+        "position": {
+          "x": 4089.57739,
+          "y": 643.69104,
+          "z": -3057.71753
+        },
+        "rotation": {
+          "x": 0.0,
+          "y": 132.003,
+          "z": 0.0
+        },
+        "scale": {
+          "x": 0.5,
+          "y": 0.65,
+          "z": 0.7
+        }
+      },
+      "alarka_loader_plate2": {
+        "assetIdentifier": "scenery://CLB_Block02",
+        "position": {
+          "x": 4089.57739,
+          "y": 643.041,
+          "z": -3057.71753
+        },
+        "rotation": {
+          "x": 0.0,
+          "y": 132.003,
+          "z": 0.0
+        },
+        "scale": {
+          "x": 0.5,
+          "y": 0.65,
+          "z": 0.7
+        }
+      },
+      "bryson_loader_plate1": {
+        "assetIdentifier": "scenery://CLB_Block02",
+        "position": {
+          "x": 4180.57031,
+          "y": 528.8861,
+          "z": 5322.273
+        },
+        "rotation": {
+          "x": 0.0,
+          "y": 249.513977,
+          "z": 0.0
+        },
+        "scale": {
+          "x": 0.5,
+          "y": 0.65,
+          "z": 0.7
+        }
+      },
+      "bryson_loader_plate2": {
+        "assetIdentifier": "scenery://CLB_Block02",
+        "position": {
+          "x": 4180.57031,
+          "y": 528.2361,
+          "z": 5322.27344
+        },
+        "rotation": {
+          "x": 0.0,
+          "y": 249.513977,
+          "z": 0.0
+        },
+        "scale": {
+          "x": 0.5,
+          "y": 0.65,
+          "z": 0.7
+        }
+      }
+    }
+  },
+  "progression": {
+    "mapFeatures": {
+      "db-engsvc": {
+        "displayName": "Dillsboro Engine Service",
+        "gameObjectsEnableOnUnlock": {
+          "scenery://loader:Dillsboro-bunker-c": true,
+          "scenery://Dillsboro_loader_plate1": true,
+          "scenery://Dillsboro_loader_plate2": true
+        }
+      },
+      "el-br": {
+        "displayName": "Ela Bridge to Bryson",
+        "initiallyEnabled": true,
+        "gameObjectsEnableOnUnlock": {
+          "scenery://loader:Bryson-bunker-c": true,
+          "scenery://bryson_loader_plate1": true,
+          "scenery://bryson_loader_plate2": true
+        }
+      },
+      "alarka": {
+        "displayName": "Alarka Branch",
+        "initiallyEnabled": true,
+        "gameObjectsEnableOnUnlock": {
+          "scenery://loader:Alarka-bunker-c": true,
+          "scenery://alarka_loader_plate1": true,
+          "scenery://alarka_loader_plate2": true
+        }
+      },
+      "fo-na": {
+        "displayName": "Fontana Bridge to Nantahala",
+        "initiallyEnabled": true,
+        "gameObjectsEnableOnUnlock": {
+          "scenery://loader:Nantahala-bunker-c": true,
+          "scenery://nantahala_loader_plate1": true,
+          "scenery://nantahala_loader_plate2": true
+        }
+      },
+      "na-an": {
+        "displayName": "Nantahala to Andrews",
+        "initiallyEnabled": true,
+        "gameObjectsEnableOnUnlock": {
+          "scenery://loader:Andrews-bunker-c": true,
+          "scenery://andrews_loader_plate1": true,
+          "scenery://andrews_loader_plate2": true
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,87 @@
+{
+  "facilities": [
+    {
+      "id": "Bunker-C loader Bryson",
+      "targetObjectName": "loader:Bryson-bunker-c",
+      "modelIdentifier": "ALW_Loader_TankLoader",
+      "requireAuthoredLoadPoints": true,
+      "debugLogging": false,
+      "loadPointId": "FuelLoaderFill",
+      "serviceLoadId": "bunker-c",
+      "carTypeFilterQuery": "TM",
+      "sourceIndustryId": "bryson-roundhouse-ops",
+      "serviceTrackSpanId": "BMR.Bunker.c.refillers:span:bryson-delivery"
+    },
+    {
+      "id": "Bunker-c Loader Dillsboro",
+      "targetObjectName": "loader:Dillsboro-bunker-c",
+      "modelIdentifier": "ALW_Loader_TankLoader",
+      "requireAuthoredLoadPoints": true,
+      "debugLogging": false,
+      "loadPointId": "FuelLoaderFill",
+      "serviceLoadId": "bunker-c",
+      "carTypeFilterQuery": "TM",
+      "sourceIndustryId": "dillsboro-roundhouse-ops",
+      "serviceTrackSpanId": "BMR.Bunker.c.refillers:span:dillsboro-delivery"
+    },
+    {
+      "id": "Bunker-C loader East Whittier",
+      "targetObjectName": "loader:EastWhittier-bunker-c",
+      "modelIdentifier": "ALW_Loader_TankLoader",
+      "requireAuthoredLoadPoints": true,
+      "debugLogging": false,
+      "loadPointId": "FuelLoaderFill",
+      "serviceLoadId": "bunker-c",
+      "sourceIndustryId": "wh-e-engine",
+      "serviceTrackSpanId": "BMR.Bunker.c.refillers:span:east-whittier-delivery",
+      "carTypeFilterQuery": "TM"
+    },
+    {
+      "id": "Bunker-C loader Alarka",
+      "targetObjectName": "loader:Alarka-bunker-c",
+      "modelIdentifier": "ALW_Loader_TankLoader",
+      "requireAuthoredLoadPoints": true,
+      "debugLogging": false,
+      "loadPointId": "FuelLoaderFill",
+      "serviceLoadId": "bunker-c",
+      "sourceIndustryId": "al-engine",
+      "serviceTrackSpanId": "BMR.Bunker.c.refillers:span:alarka-delivery",
+      "carTypeFilterQuery": "TM"
+    },
+    {
+      "id": "Bunker-C loader Nantahala",
+      "targetObjectName": "loader:Nantahala-bunker-c",
+      "modelIdentifier": "ALW_Loader_TankLoader",
+      "requireAuthoredLoadPoints": true,
+      "debugLogging": false,
+      "loadPointId": "FuelLoaderFill",
+      "serviceLoadId": "bunker-c",
+      "sourceIndustryId": "nantahala-engine",
+      "serviceTrackSpanId": "BMR.Bunker.c.refillers:span:nantahala-delivery",
+      "carTypeFilterQuery": "TM"
+    },
+    {
+      "id": "Bunker-C loader Andrews",
+      "targetObjectName": "loader:Andrews-bunker-c",
+      "modelIdentifier": "ALW_Loader_TankLoader",
+      "requireAuthoredLoadPoints": true,
+      "debugLogging": false,
+      "loadPointId": "FuelLoaderFill",
+      "serviceLoadId": "bunker-c",
+      "sourceIndustryId": "andrews-service",
+      "serviceTrackSpanId": "BMR.Bunker.c.refillers:span:andrews-delivery",
+      "carTypeFilterQuery": "TM"
+    },
+    {
+      "id": "Bunker-C loader Ela",
+      "targetObjectName": "loader:Ela-bunker-c",
+      "requireAuthoredLoadPoints": true,
+      "debugLogging": false,
+      "loadPointId": "FuelLoaderFill",
+      "serviceLoadId": "bunker-c",
+      "sourceIndustryId": "Appalachian-Railway-Ela-Engine",
+      "serviceTrackSpanId": "BMR.Bunker.c.refillers:span:ela-delivery",
+      "carTypeFilterQuery": "TM"
+    }
+  ]
+}

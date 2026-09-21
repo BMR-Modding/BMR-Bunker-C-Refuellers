@@ -1,0 +1,5 @@
+# Keep imported JSON bytes identical to the source manifest.
+*.json -text whitespace=blank-at-eol,space-before-tab,cr-at-eol
+*.md text eol=lf
+.gitignore text eol=lf
+.gitattributes text eol=lf

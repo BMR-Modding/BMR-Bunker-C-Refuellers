@@ -1,0 +1,24 @@
+# Editor backups and local/generated files
+*.tile-editor-backup-*
+[Bb]ackups/
+*.bak
+*.tmp
+*.log
+*.zip
+*.7z
+*.dll
+*.exe
+*.pdb
+.vs/
+.idea/
+__pycache__/
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.pfx
+Settings.xml
+desktop.ini
+Thumbs.db
+.DS_Store
