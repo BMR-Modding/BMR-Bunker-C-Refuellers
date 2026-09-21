@@ -4,7 +4,7 @@
   "id": "BMR.Bunker.c.refillers",
   "name": "BMR.Bunker.c.refillers",
   "author": "BMR | Bjørn",
-  "modVersion": "0.1.0",
+  "modVersion": "0.1.1",
   "coordinateSpace": "world",
   "tracks": {
     "nodes": {
@@ -30,6 +30,32 @@
         "rotation": {
           "x": 0.0,
           "y": 311.807983,
+          "z": 0.0
+        },
+        "flipSwitchStand": false
+      },
+      "Nqwt": {
+        "position": {
+          "x": 21591.291,
+          "y": 601.5,
+          "z": -1732.74365
+        },
+        "rotation": {
+          "x": 0.0,
+          "y": 74.9480057,
+          "z": 0.0
+        },
+        "flipSwitchStand": false
+      },
+      "Ndhf": {
+        "position": {
+          "x": -30209.2422,
+          "y": 538.5,
+          "z": -20188.9316
+        },
+        "rotation": {
+          "x": 0.0,
+          "y": 242.66,
           "z": 0.0
         },
         "flipSwitchStand": false

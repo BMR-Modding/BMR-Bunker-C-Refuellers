@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.1.1 - Loading-track extensions
+
+- Extended the engine-service loading tracks at Dillsboro and Andrews to provide more room for coal, Bunker C and diesel deliveries.
+
 ## 0.1.0 - Initial release
 
 - Added Bunker C refuelling at East Whittier, Dillsboro, Bryson, Alarka, Nantahala and Andrews.

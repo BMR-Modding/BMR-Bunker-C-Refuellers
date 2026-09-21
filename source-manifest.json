@@ -1,27 +1,27 @@
 {
   "imported": "2026-09-21",
   "modId": "BMR.Bunker.c.refillers",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "files": [
     {
       "path": "BMR.Bunker.c.refillers/Info.json",
       "origin": "installed-mod",
       "source": "Mods/BMR.Bunker.c.refillers/Info.json",
-      "sha256": "318593d9207e8a29d9df8b6c45f75a05cc422a9c8c43c5d68ad1a541fe9ae4b6",
+      "sha256": "0f269c7ef85829a746674aaea29accd0aaab62ab5f53a532335e1b6589a137ab",
       "bytes": 657
     },
     {
       "path": "BMR.Bunker.c.refillers/map.fuse.json",
       "origin": "installed-mod",
       "source": "Mods/BMR.Bunker.c.refillers/map.fuse.json",
-      "sha256": "deee0a66f70e8df745a6812df393e0c6d45aaa0a7bdd74afad798a555bd0a1a5",
-      "bytes": 17684
+      "sha256": "90a76cc6a28d2d07ab38b4cbfd13b363379a63804d711101700296489d4b8311",
+      "bytes": 18236
     },
     {
       "path": "BMR.Bunker.c.refillers/appalachian-ela.fuse.json",
       "origin": "installed-mod",
       "source": "Mods/BMR.Bunker.c.refillers/appalachian-ela.fuse.json",
-      "sha256": "3a66b2f50841c575d8bc0cb8aa31c5abaaa45cf365f2384aab1d229e4378f3f5",
+      "sha256": "b128e5ed19f6e217c0d2187066d8c9b81862985d182e0769f593337763991e63",
       "bytes": 3786
     },
     {

@@ -2,7 +2,7 @@
 
 Bunker C refuelling facilities for Railroader, with loaders at six base-game engine-service locations and an optional seventh at Ela for Appalachian Railway.
 
-**Version 0.1.0** · [Downloads](https://github.com/BMR-Modding/BMR-Bunker-C-Refuellers/releases) · [Report a problem](https://github.com/BMR-Modding/BMR-Bunker-C-Refuellers/issues)
+**Version 0.1.1** · [Downloads](https://github.com/BMR-Modding/BMR-Bunker-C-Refuellers/releases) · [Report a problem](https://github.com/BMR-Modding/BMR-Bunker-C-Refuellers/issues)
 
 ## Requirements
 
@@ -22,7 +22,7 @@ The download contains this mod's configuration and documentation. Required mods 
 **UMM is the primary installation method.**
 
 1. Install the required mods above and close Railroader.
-2. Download **BMR-Bunker-C-Refuellers-v0.1.0.zip** from the release's **Assets** section.
+2. Download **BMR-Bunker-C-Refuellers-v0.1.1.zip** from the release's **Assets** section.
 3. Open **Unity Mod Manager (UMM)** for Railroader and install the downloaded ZIP. Leave the ZIP intact for UMM to install.
 4. Confirm the mod and its requirements are enabled, then start Railroader.
 

@@ -4,7 +4,7 @@
   "id": "BMR.Bunker.c.refillers.appalachian-ela",
   "name": "BMR Bunker C - Ela (Appalachian Railway)",
   "author": "BMR | Bjørn",
-  "modVersion": "0.1.0",
+  "modVersion": "0.1.1",
   "description": "Optional Bunker C refueller at Appalachian Railway Ela Engine Service.",
   "coordinateSpace": "world",
   "mixinto": {
