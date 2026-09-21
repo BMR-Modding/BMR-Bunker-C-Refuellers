@@ -9,4 +9,4 @@
 - Linked the added loaders and baseplates to the relevant milestones; East Whittier is available with the starting engine service.
 - Moved the East Whittier Bunker C setup into this standalone mod. Older East Whittier Yard versions that still contain that loader need updating to avoid duplicates.
 
-The base facilities' startup visibility and milestone unlocks have been tested in-game. The final Ela baseplate milestone links and source-file metadata have passed configuration checks; their in-game retest is still pending.
+The base facilities' startup visibility and milestone unlocks have been tested in-game.
