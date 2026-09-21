@@ -73,6 +73,7 @@ Tile Editor backups, saves, logs, game assemblies and third-party assets are exc
 
 ## Credits
 
-Mod author: BMR | Bjørn. Tank-loader assets are supplied by ALW Scenery Assets; baseplate assets by C_L_B's ASSETS01. Runtime support is supplied by FUSE and Toolshed, with the optional Ela location using Appalachian Railway's engine service.
-
-[All BMR repositories](https://github.com/BMR-Modding/BMR-Modding)
+Mod author: BMR | Bjørn. 
+Tank-loader assets are supplied by ALW Scenery Assets; 
+baseplate assets by C_L_B's ASSETS01. 
+Runtime support is supplied by FUSE and Toolshed, with the optional Ela location using Appalachian Railway's engine service.
