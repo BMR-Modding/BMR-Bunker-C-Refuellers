@@ -17,17 +17,22 @@ Install and enable these separately before installing this mod:
 
 The download contains this mod's configuration and documentation. Required mods and their assets are not bundled.
 
-## Installation
+## Installation with Unity Mod Manager (UMM)
+
+**UMM is the primary installation method.**
 
 1. Install the required mods above and close Railroader.
 2. Download **BMR-Bunker-C-Refuellers-v0.1.0.zip** from the release's **Assets** section.
-3. Extract the **BMR.Bunker.c.refillers** folder into `Railroader/Mods`.
-4. Check that the path is `Railroader/Mods/BMR.Bunker.c.refillers/Info.json`, with no extra folder level.
-5. Start Railroader and confirm the mod and its requirements are enabled.
+3. Open **Unity Mod Manager (UMM)** for Railroader and install the downloaded ZIP. Leave the ZIP intact for UMM to install.
+4. Confirm the mod and its requirements are enabled, then start Railroader.
 
-For an update, close the game and replace the existing `BMR.Bunker.c.refillers` folder with the folder from the new ZIP. Keep only one installed copy. Preserve any personal placement edits separately before replacing it.
+For an update, install the new release ZIP through UMM. Preserve any personal placement edits separately before updating, and keep only one installed copy of the mod.
 
-GitHub also offers automatic **Source code** archives. If using one of those, copy the inner `BMR.Bunker.c.refillers` folder into `Mods`; the outer repository folder is not the mod.
+### Manual installation (alternative)
+
+With Railroader closed, extract the **BMR.Bunker.c.refillers** folder into `Railroader/Mods`. Check that the path is `Railroader/Mods/BMR.Bunker.c.refillers/Info.json`, with no extra folder level, then enable the mod and start the game.
+
+Use the packaged release ZIP for UMM installation. GitHub's automatic **Source code** archives contain the repository and its development files.
 
 ## Locations and milestones
 
