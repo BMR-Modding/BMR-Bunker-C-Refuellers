@@ -60,7 +60,7 @@ The six main placements target the base-game layout. Other mods can introduce sc
 
 **Appalachian Railway:** the Ela addition loads automatically when the mod is enabled and follows its Route to Cherokee milestone. FUSE skips this addition when Appalachian Railway is absent or disabled.
 
-The author confirmed the base facilities' new-company visibility and milestone unlocking in-game. Runtime logs also confirmed the Ela addition applied and Toolshed connected its receiving unloader. **The final Ela baseplate milestone links and source-file metadata have been checked in configuration; their in-game retest is still pending.** Compatibility with every map mod has not been tested.
+**Compatibility with every map mod has not been tested.**
 
 ## Reporting problems
 
@@ -91,6 +91,7 @@ The repository's `source-manifest.json` records the runtime files' SHA-256 hashe
 ## Credits
 
 Mod author: BMR | Bjørn. 
-Tank-loader assets are supplied by ALW Scenery Assets; 
-baseplate assets by C_L_B's ASSETS01. 
-Runtime support is supplied by FUSE and Toolshed, with the optional Ela location using Appalachian Railway's engine service.
+- Tank-loader assets are supplied by ALW Scenery Assets; 
+- baseplate assets by C_L_B's ASSETS01. 
+- Runtime support is supplied by FUSE and Toolshed 
+- The optional Ela location using Appalachian Railway's engine service.
