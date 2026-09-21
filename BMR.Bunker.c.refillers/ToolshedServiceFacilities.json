@@ -10,6 +10,9 @@
       "serviceLoadId": "bunker-c",
       "carTypeFilterQuery": "TM",
       "sourceIndustryId": "bryson-roundhouse-ops",
+      "sourceIndustryIds": [
+        "brysonEngineService"
+      ],
       "serviceTrackSpanId": "BMR.Bunker.c.refillers:span:bryson-delivery"
     },
     {

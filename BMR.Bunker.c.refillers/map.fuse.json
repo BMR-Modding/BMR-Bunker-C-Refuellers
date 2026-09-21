@@ -4,7 +4,7 @@
   "id": "BMR.Bunker.c.refillers",
   "name": "BMR.Bunker.c.refillers",
   "author": "BMR | Bjørn",
-  "modVersion": "0.1.1",
+  "modVersion": "0.1.2",
   "coordinateSpace": "world",
   "tracks": {
     "nodes": {
@@ -63,18 +63,6 @@
     },
     "segments": {},
     "spans": {
-      "BMR.Bunker.c.refillers:span:bryson-delivery": {
-        "upper": {
-          "segmentId": "Sk0n",
-          "distance": 35.7228,
-          "end": "End"
-        },
-        "lower": {
-          "segmentId": "S83r",
-          "distance": 11.8585281,
-          "end": "End"
-        }
-      },
       "BMR.Bunker.c.refillers:span:dillsboro-delivery": {
         "upper": {
           "segmentId": "Sca0",
@@ -150,35 +138,6 @@
   "operations": {
     "loads": {},
     "industries": {
-      "bryson-roundhouse-ops": {
-        "name": "Bryson Engine Service",
-        "areaId": "bryson",
-        "position": {
-          "x": -271.6577,
-          "y": 0.0,
-          "z": -22.8286133
-        },
-        "usesContract": false,
-        "mergeComponents": true,
-        "replaceComponents": false,
-        "components": {
-          "bunker-c": {
-            "type": "unloader",
-            "name": "Bryson Engine Service Bunker-C Loader",
-            "trackSpanIds": [
-              "BMR.Bunker.c.refillers:span:bryson-delivery"
-            ],
-            "carTypeFilter": "TM",
-            "loadId": "bunker-c",
-            "sharedStorage": true,
-            "storageChangeRate": 0.0,
-            "maxStorage": 10000.0,
-            "carTransferRate": 32000.0,
-            "orderAroundEmpties": false,
-            "orderAroundLoaded": false
-          }
-        }
-      },
       "dillsboro-roundhouse-ops": {
         "name": "Dillsboro Engine Service",
         "areaId": "dillsboro",

@@ -1,34 +1,48 @@
 {
   "$schema": "../FUSE/schemas/fuse-mod.schema.json",
   "schemaVersion": "1.0",
-  "id": "BMR.Bunker.c.refillers.appalachian-ela",
-  "name": "BMR Bunker C - Ela (Appalachian Railway)",
+  "id": "BMR.Bunker.c.refillers.foxy-alarka",
+  "name": "BMR Bunker C - Foxy Alarka Compatibility",
   "author": "BMR | Bjørn",
   "modVersion": "0.1.2",
-  "description": "Optional Bunker C refueller at Appalachian Railway Ela Engine Service.",
+  "description": "Conditional Alarka Bunker C adaptation for Foxy's Alarka Yard Expanded.",
   "coordinateSpace": "world",
   "mixinto": {
     "target": "game-graph",
     "requires": [
       {
-        "id": "Appalachian-Railway.KingG"
+        "id": "CF.AlarkaYard.Expanded"
       }
     ],
-    "sourceFile": "appalachian-ela.fuse.json"
+    "sourceFile": "foxy-alarka.fuse.json"
   },
   "tracks": {
-    "nodes": {},
+    "nodes": {
+      "Nf27": {
+        "position": {
+          "x": 4086.38672,
+          "y": 643.999756,
+          "z": -3061.4668
+        },
+        "rotation": {
+          "x": 0.100000039,
+          "y": 311.807983,
+          "z": 6.670116e-09
+        },
+        "flipSwitchStand": false
+      }
+    },
     "segments": {},
     "spans": {
-      "BMR.Bunker.c.refillers:span:ela-delivery": {
+      "BMR.Bunker.c.refillers:span:alarka-delivery": {
         "lower": {
-          "segmentId": "S_KG.BRANCH_9hmp",
+          "segmentId": "SCFAYEX_ai6c",
           "distance": 0.0,
           "end": "A"
         },
         "upper": {
-          "segmentId": "S_KG.BRANCH_9hmp",
-          "distance": 0.0,
+          "segmentId": "SCFAYEX_ai6c",
+          "distance": 25.0,
           "end": "B"
         },
         "normalize": true
@@ -43,19 +57,13 @@
   "operations": {
     "loads": {},
     "industries": {
-      "Appalachian-Railway-Ela-Engine": {
-        "name": "Ela Engine Service",
-        "areaId": "ela",
-        "order": 1,
+      "al-engine": {
+        "name": "Alarka Engine Fuel Service",
+        "areaId": "alarka",
         "position": {
-          "x": 9596.0,
-          "y": 546.0,
-          "z": 7452.0
-        },
-        "rotation": {
-          "x": 0.0,
-          "y": 0.0,
-          "z": 0.0
+          "x": -70.7131348,
+          "y": -1.472168,
+          "z": 95.20264
         },
         "usesContract": false,
         "mergeComponents": true,
@@ -63,9 +71,9 @@
         "components": {
           "bunker-c": {
             "type": "unloader",
-            "name": "Ela Engine Service Bunker-C Loader",
+            "name": "Alarka Engine Fuel Service Bunker-C Loader",
             "trackSpanIds": [
-              "BMR.Bunker.c.refillers:span:ela-delivery"
+              "BMR.Bunker.c.refillers:span:alarka-delivery"
             ],
             "carTypeFilter": "TM",
             "loadId": "bunker-c",
@@ -82,15 +90,15 @@
   },
   "world": {
     "scenery": {
-      "loader:Ela-bunker-c": {
+      "loader:Alarka-bunker-c": {
         "position": {
-          "x": 9546.48,
-          "y": 546.74,
-          "z": 7433.16162
+          "x": 4092.973,
+          "y": 644.0,
+          "z": -3054.16577
         },
         "rotation": {
           "x": 0.0,
-          "y": 110.772255,
+          "y": 311.963562,
           "z": 0.0
         },
         "scale": {
@@ -100,16 +108,16 @@
         },
         "assetIdentifier": "scenery://ALW_Loader_TankLoader"
       },
-      "Ela-Loader-plate01": {
+      "alarka_loader_plate1": {
         "assetIdentifier": "scenery://CLB_Block02",
         "position": {
-          "x": 9548.189,
-          "y": 546.4141,
-          "z": 7437.72461
+          "x": 4089.57739,
+          "y": 643.69104,
+          "z": -3057.71753
         },
         "rotation": {
           "x": 0.0,
-          "y": 290.664,
+          "y": 132.003,
           "z": 0.0
         },
         "scale": {
@@ -118,35 +126,22 @@
           "z": 0.7
         }
       },
-      "Ela-Loader-plate02": {
+      "alarka_loader_plate2": {
         "assetIdentifier": "scenery://CLB_Block02",
         "position": {
-          "x": 9548.19,
-          "y": 545.814,
-          "z": 7437.72461
+          "x": 4089.57739,
+          "y": 643.041,
+          "z": -3057.71753
         },
         "rotation": {
           "x": 0.0,
-          "y": 290.664,
+          "y": 132.003,
           "z": 0.0
         },
         "scale": {
           "x": 0.5,
           "y": 0.65,
           "z": 0.7
-        }
-      }
-    }
-  },
-  "progression": {
-    "mapFeatures": {
-      "AR-Cherokee": {
-        "displayName": "Route to Cherokee",
-        "initiallyEnabled": true,
-        "gameObjectsEnableOnUnlock": {
-          "scenery://loader:Ela-bunker-c": true,
-          "scenery://Ela-Loader-plate01": true,
-          "scenery://Ela-Loader-plate02": true
         }
       }
     }

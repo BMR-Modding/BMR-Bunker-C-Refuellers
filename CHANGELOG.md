@@ -1,5 +1,13 @@
 # Changelog
 
+## 0.1.2 - Alarka and Bryson compatibility
+
+- Added automatic compatibility for Foxy's Alarka Yard Expanded, adapting the Bunker C delivery span to the expanded yard and its engine fuel service.
+- Added automatic compatibility for Stryker's Bryson, placing the Bunker C loader at Bryson Roundhouse and sharing the coal and diesel delivery span.
+- Connected the Bryson loader to the appropriate industry storage for either layout and removed the BMR baseplates when Stryker's Bryson is active.
+- Kept the original Bryson setup when Stryker's Bryson is absent or disabled. Both compatibility additions are optional; no new mandatory dependencies were added.
+
+
 ## 0.1.1 - Loading-track extensions
 
 - Extended the engine-service loading tracks at Dillsboro and Andrews to provide more room for coal, Bunker C and diesel deliveries.

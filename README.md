@@ -2,7 +2,7 @@
 
 Bunker C refuelling facilities for Railroader, with loaders at six base-game engine-service locations and an optional seventh at Ela for Appalachian Railway.
 
-**Version 0.1.1** · [Nexus Mods](https://www.nexusmods.com/railroader/mods/1756) · [GitHub releases](https://github.com/BMR-Modding/BMR-Bunker-C-Refuellers/releases) · [Report a problem](https://github.com/BMR-Modding/BMR-Bunker-C-Refuellers/issues)
+**Version 0.1.2** · [Nexus Mods](https://www.nexusmods.com/railroader/mods/1756) · [GitHub releases](https://github.com/BMR-Modding/BMR-Bunker-C-Refuellers/releases) · [Report a problem](https://github.com/BMR-Modding/BMR-Bunker-C-Refuellers/issues)
 
 ## Requirements
 
@@ -15,6 +15,10 @@ Install and enable these separately before installing this mod:
 
 **Appalachian Railway** (`Appalachian-Railway.KingG`) is optional. It enables the Ela addition; the six base-map locations work without it. You also need a locomotive or tender that uses Bunker C.
 
+**Foxy's Alarka Yard Expanded** and **Stryker's Bryson** are also optional. Their compatibility adjustments activate automatically when the corresponding mod is enabled.
+
+Install the legacy **C_L_B's ASSETS01** dependency manually: place its inner mod folder directly inside `Railroader/Mods`. Avoid an extra `Mods/Mods` folder level.
+
 The download contains this mod's configuration and documentation. Required mods and their assets are not bundled.
 
 ## Installation with Unity Mod Manager (UMM)
@@ -22,7 +26,7 @@ The download contains this mod's configuration and documentation. Required mods 
 **UMM is the primary installation method.**
 
 1. Install the required mods above and close Railroader.
-2. Download **BMR-Bunker-C-Refuellers-v0.1.1.zip** from the release's **Assets** section.
+2. Download **BMR-Bunker-C-Refuellers-v0.1.2.zip** from the release's **Assets** section.
 3. Open **Unity Mod Manager (UMM)** for Railroader and install the downloaded ZIP. Leave the ZIP intact for UMM to install.
 4. Confirm the mod and its requirements are enabled, then start Railroader.
 
@@ -36,7 +40,7 @@ Use the packaged release ZIP for UMM installation. GitHub's automatic **Source c
 
 ## Locations and milestones
 
-Each facility includes a tank loader, two baseplates and a tank-car delivery span. The added loader and baseplates follow the milestone listed below.
+Each facility includes a tank loader and a tank-car delivery span. The base placements include two baseplates; the Stryker's Bryson adaptation uses the yard's existing surface. The added loader and any baseplates follow the milestone listed below.
 
 | Location | Availability |
 | --- | --- |
@@ -60,6 +64,11 @@ The six main placements target the base-game layout. Other mods can introduce sc
 
 **Appalachian Railway:** the Ela addition loads automatically when the mod is enabled and follows its Route to Cherokee milestone. FUSE skips this addition when Appalachian Railway is absent or disabled.
 
+**Foxy's Alarka Yard Expanded:** automatically adapts the Bunker C delivery span to the expanded yard and adds Bunker C to Alarka Engine Fuel Service.
+
+**Stryker's Bryson:** automatically places the Bunker C loader at Bryson Roundhouse and uses the same delivery span as coal and diesel. It connects to the roundhouse's shared Bunker C storage and removes the two BMR baseplates at this location. The original Bryson setup is used when Stryker's Bryson is absent or disabled.
+
+
 **Compatibility with every map mod has not been tested.**
 
 ## Reporting problems
@@ -75,12 +84,15 @@ The game logs are normally in `%USERPROFILE%/AppData/LocalLow/Giraffe Lab LLC/Ra
 
 ## Source files and editing
 
-No compilation is required. The mod uses four configuration files:
+No compilation is required. The mod uses seven configuration files:
 
-- `Info.json`: dependencies, apply priority and the two FUSE data files.
-- `map.fuse.json`: the six main facilities, delivery spans, industry additions and milestone links.
-- `appalachian-ela.fuse.json`: optional Ela placement and operations, conditional on Appalachian Railway.
-- `ToolshedServiceFacilities.json`: the seven service bindings.
+- `Info.json`: dependencies, apply priority and the five FUSE data files.
+- `map.fuse.json`: the shared scenery and milestone links, plus the five non-Bryson base facilities.
+- `bryson-vanilla.fuse.json`: the original Bryson span and industry addition, active when Stryker's Bryson is absent.
+- `appalachian-ela.fuse.json`: optional Ela placement and operations for Appalachian Railway.
+- `foxy-alarka.fuse.json`: optional Alarka adjustments for Foxy's Alarka Yard Expanded.
+- `stryker-bryson.fuse.json`: optional Bryson Roundhouse placement, delivery span and industry addition for Stryker's Bryson.
+- `ToolshedServiceFacilities.json`: the seven service bindings, including both Bryson industry IDs.
 
 Object, service, industry and span IDs link these files together. Keep those references consistent when editing. Changes made to an installed copy do not automatically update this repository.
 

@@ -1,0 +1,76 @@
+{
+  "$schema": "../FUSE/schemas/fuse-mod.schema.json",
+  "schemaVersion": "1.0",
+  "id": "BMR.Bunker.c.refillers.bryson-vanilla",
+  "name": "BMR Bunker C - Vanilla Bryson",
+  "author": "BMR | Bjørn",
+  "modVersion": "0.1.2",
+  "description": "Original Bryson delivery span and Bunker C industry component, used when Stryker's Bryson is not enabled.",
+  "coordinateSpace": "world",
+  "mixinto": {
+    "target": "game-graph",
+    "conflictsWith": [
+      {
+        "id": "StrykerBryson"
+      }
+    ],
+    "sourceFile": "bryson-vanilla.fuse.json"
+  },
+  "tracks": {
+    "nodes": {},
+    "segments": {},
+    "spans": {
+      "BMR.Bunker.c.refillers:span:bryson-delivery": {
+        "upper": {
+          "segmentId": "Sk0n",
+          "distance": 35.7228,
+          "end": "End"
+        },
+        "lower": {
+          "segmentId": "S83r",
+          "distance": 11.8585281,
+          "end": "End"
+        }
+      }
+    },
+    "removals": {
+      "nodes": [],
+      "segments": [],
+      "spans": []
+    }
+  },
+  "operations": {
+    "loads": {},
+    "industries": {
+      "bryson-roundhouse-ops": {
+        "name": "Bryson Engine Service",
+        "areaId": "bryson",
+        "position": {
+          "x": -271.6577,
+          "y": 0.0,
+          "z": -22.8286133
+        },
+        "usesContract": false,
+        "mergeComponents": true,
+        "replaceComponents": false,
+        "components": {
+          "bunker-c": {
+            "type": "unloader",
+            "name": "Bryson Engine Service Bunker-C Loader",
+            "trackSpanIds": [
+              "BMR.Bunker.c.refillers:span:bryson-delivery"
+            ],
+            "carTypeFilter": "TM",
+            "loadId": "bunker-c",
+            "sharedStorage": true,
+            "storageChangeRate": 0.0,
+            "maxStorage": 10000.0,
+            "carTransferRate": 32000.0,
+            "orderAroundEmpties": false,
+            "orderAroundLoaded": false
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,99 @@
+{
+  "$schema": "../FUSE/schemas/fuse-mod.schema.json",
+  "schemaVersion": "1.0",
+  "id": "BMR.Bunker.c.refillers.stryker-bryson",
+  "name": "BMR Bunker C - Stryker Bryson Compatibility",
+  "author": "BMR | Bjørn",
+  "modVersion": "0.1.2",
+  "description": "Conditional Bunker C refuelling at Stryker's Bryson Roundhouse, sharing the coal and diesel delivery track.",
+  "coordinateSpace": "world",
+  "mixinto": {
+    "target": "game-graph",
+    "requires": [
+      {
+        "id": "StrykerBryson"
+      }
+    ],
+    "sourceFile": "stryker-bryson.fuse.json"
+  },
+  "tracks": {
+    "nodes": {},
+    "segments": {},
+    "spans": {
+      "BMR.Bunker.c.refillers:span:bryson-delivery": {
+        "upper": {
+          "segmentId": "S_StrBryson_1dst",
+          "distance": 0.0,
+          "end": "Start"
+        },
+        "lower": {
+          "segmentId": "S_StrBryson_1dst",
+          "distance": 0.0,
+          "end": "End"
+        }
+      }
+    },
+    "removals": {
+      "nodes": [],
+      "segments": [],
+      "spans": []
+    }
+  },
+  "operations": {
+    "loads": {},
+    "industries": {
+      "brysonEngineService": {
+        "name": "Bryson Roundhouse",
+        "areaId": "bryson",
+        "usesContract": false,
+        "mergeComponents": true,
+        "replaceComponents": false,
+        "components": {
+          "bunker-c": {
+            "type": "unloader",
+            "name": "Bryson Roundhouse Bunker-C Loader",
+            "trackSpanIds": [
+              "BMR.Bunker.c.refillers:span:bryson-delivery"
+            ],
+            "carTypeFilter": "TM",
+            "loadId": "bunker-c",
+            "sharedStorage": true,
+            "storageChangeRate": 0.0,
+            "maxStorage": 10000.0,
+            "carTransferRate": 32000.0,
+            "orderAroundEmpties": false,
+            "orderAroundLoaded": false
+          }
+        }
+      }
+    }
+  },
+  "world": {
+    "scenery": {
+      "loader:Bryson-bunker-c": {
+        "position": {
+          "x": 4206.3833,
+          "y": 529.0001,
+          "z": 5327.691
+        },
+        "rotation": {
+          "x": 0.0,
+          "y": 69.68469,
+          "z": 0.0
+        },
+        "scale": {
+          "x": 1.0,
+          "y": 1.0,
+          "z": 1.0
+        },
+        "assetIdentifier": "scenery://ALW_Loader_TankLoader"
+      }
+    },
+    "removals": {
+      "scenery": [
+        "bryson_loader_plate1",
+        "bryson_loader_plate2"
+      ]
+    }
+  }
+}
