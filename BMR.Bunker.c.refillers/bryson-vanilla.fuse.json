@@ -4,7 +4,7 @@
   "id": "BMR.Bunker.c.refillers.bryson-vanilla",
   "name": "BMR Bunker C - Vanilla Bryson",
   "author": "BMR | Bjørn",
-  "modVersion": "0.1.2",
+  "modVersion": "0.1.3",
   "description": "Original Bryson delivery span and Bunker C industry component, used when Stryker's Bryson is not enabled.",
   "coordinateSpace": "world",
   "mixinto": {

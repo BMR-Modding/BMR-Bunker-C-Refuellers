@@ -1,0 +1,143 @@
+{
+  "$schema": "../FUSE/schemas/fuse-mod.schema.json",
+  "schemaVersion": "1.0",
+  "id": "BMR.Bunker.c.refillers.kirkland-coal-mine",
+  "name": "BMR Bunker C - Kirkland Coal Mine",
+  "author": "BMR | Bjørn",
+  "modVersion": "0.1.3",
+  "description": "Optional Bunker C refuelling at Kirkland Services, sharing the existing coal delivery span. Oil-column placement is authored in this fragment.",
+  "coordinateSpace": "world",
+  "mixinto": {
+    "target": "game-graph",
+    "requires": [
+      {
+        "id": "Stryker.Kirkland.CoalMine"
+      }
+    ],
+    "sourceFile": "kirkland-coal-mine.fuse.json"
+  },
+  "tracks": {
+    "nodes": {
+      "N_WNC_KCM_lwy7": {
+        "position": {
+          "x": 11399.6982,
+          "y": 558.14,
+          "z": 7019.171
+        },
+        "rotation": {
+          "x": 0.0,
+          "y": 267.999939,
+          "z": 0.0
+        },
+        "flipSwitchStand": false
+      }
+    },
+    "segments": {},
+    "spans": {
+      "BMR.Bunker.c.refillers:span:kirkland-delivery": {
+        "upper": {
+          "segmentId": "S_WNC_KCM_00hw",
+          "distance": 0.0,
+          "end": "Start"
+        },
+        "lower": {
+          "segmentId": "S_WNC_KCM_00hw",
+          "distance": 0.0,
+          "end": "End"
+        }
+      }
+    },
+    "removals": {
+      "nodes": [],
+      "segments": [],
+      "spans": []
+    }
+  },
+  "operations": {
+    "loads": {},
+    "industries": {
+      "kirkland-servicing": {
+        "name": "Kirkland Services",
+        "areaId": "ela",
+        "usesContract": false,
+        "mergeComponents": true,
+        "replaceComponents": false,
+        "components": {
+          "bunker-c": {
+            "type": "unloader",
+            "name": "Kirkland Services Bunker-C Loader",
+            "trackSpanIds": [
+              "BMR.Bunker.c.refillers:span:kirkland-delivery"
+            ],
+            "carTypeFilter": "TM",
+            "loadId": "bunker-c",
+            "sharedStorage": true,
+            "storageChangeRate": 0.0,
+            "maxStorage": 10000.0,
+            "carTransferRate": 32000.0,
+            "orderAroundEmpties": false,
+            "orderAroundLoaded": false
+          }
+        }
+      }
+    }
+  },
+  "world": {
+    "scenery": {
+      "loader:Kirkland-bunker-c": {
+        "assetIdentifier": "scenery://SPRoseOilColumn",
+        "position": {
+          "x": 11404.8691,
+          "y": 559.14,
+          "z": 7016.403
+        },
+        "rotation": {
+          "x": 0.0,
+          "y": 88.0385742,
+          "z": 0.0
+        },
+        "scale": {
+          "x": 1.0,
+          "y": 1.0,
+          "z": 1.0
+        }
+      },
+      "Kirkland-loader_block_1": {
+        "assetIdentifier": "scenery://CLB_Block01",
+        "position": {
+          "x": 11406.1973,
+          "y": 557.322632,
+          "z": 7016.27344
+        },
+        "rotation": {
+          "x": 0.0,
+          "y": 178.146362,
+          "z": 0.0
+        },
+        "scale": {
+          "x": 0.799999952,
+          "y": 0.799999952,
+          "z": 0.799999952
+        }
+      },
+      "Kirkland-loader_block_2": {
+        "assetIdentifier": "scenery://CLB_Block01",
+        "position": {
+          "x": 11404.6963,
+          "y": 557.322632,
+          "z": 7016.226
+        },
+        "rotation": {
+          "x": 0.0,
+          "y": 178.146362,
+          "z": 0.0
+        },
+        "scale": {
+          "x": 0.799999952,
+          "y": 0.799999952,
+          "z": 0.799999952
+        }
+      }
+    }
+  }
+}

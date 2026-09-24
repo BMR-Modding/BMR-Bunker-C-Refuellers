@@ -3,19 +3,19 @@
   "Id": "BMR.Bunker.c.refillers",
   "DisplayName": "BMR.Bunker.c.refillers",
   "Author": "BMR | Bjørn",
-  "Version": "0.1.2",
+  "Version": "0.1.3",
   "ManagerVersion": "0.27.10",
   "GameVersion": "2025.1",
   "Requirements": [
     "FUSE",
     "Toolshed",
-    "ALW.SceneryAssets.FUSE"
+    "CLW_Assets"
   ],
   "LoadAfter": [
     "FUSE",
     "Toolshed",
-    "ALW.SceneryAssets.FUSE",
-    "CF.DillsboroRework"
+    "CF.DillsboroRework",
+    "CLW_Assets"
   ],
   "FuseLoadPriority": 110,
   "FuseLoadAfter": [],
@@ -26,8 +26,9 @@
   "FuseDataFiles": [
     "map.fuse.json",
     "bryson-vanilla.fuse.json",
-    "appalachian-ela.fuse.json",
     "foxy-alarka.fuse.json",
-    "stryker-bryson.fuse.json"
+    "stryker-bryson.fuse.json",
+    "kirkland-coal-mine.fuse.json",
+    "katers-sylva-turntable.fuse.json"
   ]
 }

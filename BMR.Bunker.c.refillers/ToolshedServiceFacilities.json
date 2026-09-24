@@ -3,7 +3,7 @@
     {
       "id": "Bunker-C loader Bryson",
       "targetObjectName": "loader:Bryson-bunker-c",
-      "modelIdentifier": "ALW_Loader_TankLoader",
+      "modelIdentifier": "scenery://SPRoseOilColumn",
       "requireAuthoredLoadPoints": true,
       "debugLogging": false,
       "loadPointId": "FuelLoaderFill",
@@ -18,7 +18,7 @@
     {
       "id": "Bunker-c Loader Dillsboro",
       "targetObjectName": "loader:Dillsboro-bunker-c",
-      "modelIdentifier": "ALW_Loader_TankLoader",
+      "modelIdentifier": "scenery://SPRoseOilColumn",
       "requireAuthoredLoadPoints": true,
       "debugLogging": false,
       "loadPointId": "FuelLoaderFill",
@@ -30,7 +30,7 @@
     {
       "id": "Bunker-C loader East Whittier",
       "targetObjectName": "loader:EastWhittier-bunker-c",
-      "modelIdentifier": "ALW_Loader_TankLoader",
+      "modelIdentifier": "scenery://SPRoseOilColumn",
       "requireAuthoredLoadPoints": true,
       "debugLogging": false,
       "loadPointId": "FuelLoaderFill",
@@ -42,7 +42,7 @@
     {
       "id": "Bunker-C loader Alarka",
       "targetObjectName": "loader:Alarka-bunker-c",
-      "modelIdentifier": "ALW_Loader_TankLoader",
+      "modelIdentifier": "scenery://SPRoseOilColumn",
       "requireAuthoredLoadPoints": true,
       "debugLogging": false,
       "loadPointId": "FuelLoaderFill",
@@ -54,7 +54,7 @@
     {
       "id": "Bunker-C loader Nantahala",
       "targetObjectName": "loader:Nantahala-bunker-c",
-      "modelIdentifier": "ALW_Loader_TankLoader",
+      "modelIdentifier": "scenery://SPRoseOilColumn",
       "requireAuthoredLoadPoints": true,
       "debugLogging": false,
       "loadPointId": "FuelLoaderFill",
@@ -66,7 +66,7 @@
     {
       "id": "Bunker-C loader Andrews",
       "targetObjectName": "loader:Andrews-bunker-c",
-      "modelIdentifier": "ALW_Loader_TankLoader",
+      "modelIdentifier": "scenery://SPRoseOilColumn",
       "requireAuthoredLoadPoints": true,
       "debugLogging": false,
       "loadPointId": "FuelLoaderFill",
@@ -76,14 +76,36 @@
       "carTypeFilterQuery": "TM"
     },
     {
-      "id": "Bunker-C loader Ela",
-      "targetObjectName": "loader:Ela-bunker-c",
+      "id": "Bunker-C loader Kirkland",
+      "targetObjectName": "loader:Kirkland-bunker-c",
       "requireAuthoredLoadPoints": true,
       "debugLogging": false,
       "loadPointId": "FuelLoaderFill",
       "serviceLoadId": "bunker-c",
-      "sourceIndustryId": "Appalachian-Railway-Ela-Engine",
-      "serviceTrackSpanId": "BMR.Bunker.c.refillers:span:ela-delivery",
+      "sourceIndustryId": "kirkland-servicing",
+      "serviceTrackSpanId": "BMR.Bunker.c.refillers:span:kirkland-delivery",
+      "carTypeFilterQuery": "TM"
+    },
+    {
+      "id": "Bunker-C loader Sylva 01",
+      "targetObjectName": "loader:Sylva-bunker-c-01",
+      "requireAuthoredLoadPoints": true,
+      "debugLogging": false,
+      "loadPointId": "FuelLoaderFill",
+      "serviceLoadId": "bunker-c",
+      "sourceIndustryId": "SylvaFuelService",
+      "serviceTrackSpanId": "BMR.Bunker.c.refillers:span:sylva-delivery",
+      "carTypeFilterQuery": "TM"
+    },
+    {
+      "id": "Bunker-C loader Sylva 02",
+      "targetObjectName": "loader:Sylva-bunker-c-02",
+      "requireAuthoredLoadPoints": true,
+      "debugLogging": false,
+      "loadPointId": "FuelLoaderFill",
+      "serviceLoadId": "bunker-c",
+      "sourceIndustryId": "SylvaFuelService",
+      "serviceTrackSpanId": "BMR.Bunker.c.refillers:span:sylva-delivery",
       "carTypeFilterQuery": "TM"
     }
   ]

@@ -1,0 +1,111 @@
+{
+  "$schema": "../FUSE/schemas/fuse-mod.schema.json",
+  "schemaVersion": "1.0",
+  "id": "BMR.Bunker.c.refillers.katers-sylva-turntable",
+  "name": "BMR Bunker C - Katers Sylva Interchange Turntable",
+  "author": "BMR | Bjørn",
+  "modVersion": "0.1.3",
+  "description": "Optional Bunker C service at Sylva Interchange Fuel Service. Two oil columns share the industry storage and a dedicated span over the diesel delivery track.",
+  "coordinateSpace": "world",
+  "mixinto": {
+    "target": "game-graph",
+    "requires": [
+      {
+        "id": "Katers.SylvaInterchangeTurntable"
+      }
+    ],
+    "sourceFile": "katers-sylva-turntable.fuse.json"
+  },
+  "tracks": {
+    "nodes": {},
+    "segments": {},
+    "spans": {
+      "BMR.Bunker.c.refillers:span:sylva-delivery": {
+        "upper": {
+          "segmentId": "SSylTT_l40x",
+          "distance": 25.0,
+          "end": "Start"
+        },
+        "lower": {
+          "segmentId": "SSylTT_l40x",
+          "distance": 1.0,
+          "end": "End"
+        }
+      }
+    },
+    "removals": {
+      "nodes": [],
+      "segments": [],
+      "spans": []
+    }
+  },
+  "operations": {
+    "loads": {},
+    "industries": {
+      "SylvaFuelService": {
+        "name": "Sylva Interchange Fuel Service",
+        "areaId": "sylva",
+        "usesContract": false,
+        "mergeComponents": true,
+        "replaceComponents": false,
+        "components": {
+          "bunker-c": {
+            "type": "unloader",
+            "name": "Sylva Interchange Bunker-C Loader",
+            "trackSpanIds": [
+              "BMR.Bunker.c.refillers:span:sylva-delivery"
+            ],
+            "carTypeFilter": "TM",
+            "loadId": "bunker-c",
+            "sharedStorage": true,
+            "storageChangeRate": 0.0,
+            "maxStorage": 10000.0,
+            "carTransferRate": 32000.0,
+            "orderAroundEmpties": false,
+            "orderAroundLoaded": false
+          }
+        }
+      }
+    }
+  },
+  "world": {
+    "scenery": {
+      "loader:Sylva-bunker-c-01": {
+        "assetIdentifier": "scenery://SPRoseOilColumn",
+        "position": {
+          "x": 25481.76,
+          "y": 630.487366,
+          "z": 218.479538
+        },
+        "rotation": {
+          "x": 0.0,
+          "y": 198.961243,
+          "z": 0.0
+        },
+        "scale": {
+          "x": 1.0,
+          "y": 1.0,
+          "z": 1.0
+        }
+      },
+      "loader:Sylva-bunker-c-02": {
+        "assetIdentifier": "scenery://SPRoseOilColumn",
+        "position": {
+          "x": 25486.1,
+          "y": 630.486938,
+          "z": 217.058441
+        },
+        "rotation": {
+          "x": 0.0,
+          "y": 19.4462566,
+          "z": 0.0
+        },
+        "scale": {
+          "x": 1.0,
+          "y": 1.0,
+          "z": 1.0
+        }
+      }
+    }
+  }
+}

@@ -4,7 +4,7 @@
   "id": "BMR.Bunker.c.refillers.stryker-bryson",
   "name": "BMR Bunker C - Stryker Bryson Compatibility",
   "author": "BMR | Bjørn",
-  "modVersion": "0.1.2",
+  "modVersion": "0.1.3",
   "description": "Conditional Bunker C refuelling at Stryker's Bryson Roundhouse, sharing the coal and diesel delivery track.",
   "coordinateSpace": "world",
   "mixinto": {
@@ -72,12 +72,12 @@
     "scenery": {
       "loader:Bryson-bunker-c": {
         "position": {
-          "x": 4206.3833,
-          "y": 529.0001,
-          "z": 5327.691
+          "x": 4198.21338,
+          "y": 529.500244,
+          "z": 5327.8667
         },
         "rotation": {
-          "x": 0.0,
+          "x": 1.00179122E-05,
           "y": 69.68469,
           "z": 0.0
         },
@@ -86,7 +86,7 @@
           "y": 1.0,
           "z": 1.0
         },
-        "assetIdentifier": "scenery://ALW_Loader_TankLoader"
+        "assetIdentifier": "scenery://SPRoseOilColumn"
       }
     },
     "removals": {
